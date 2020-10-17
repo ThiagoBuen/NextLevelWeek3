@@ -68,3 +68,12 @@ function toggleEvent(event) {
 
   input.value = button.dataset.value;
 }
+
+function validate(event) {
+  const latMissing = false;
+  if (latMissing) {
+    alert('Selecione um ponto no mapa');
+    event.prevenDefault(); //Não envia o formulário
+  }
+  //Criar função para validar as informações de lat e lng foram passadas
+}

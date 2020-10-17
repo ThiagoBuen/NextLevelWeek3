@@ -8,7 +8,7 @@ const server = express();
 server
   //Usando arquivos estáticos
   .use(express.static('public'))
-
+  .use(express.urlencoded({ extended: true }))
   //Configurar template engine
 
   .set('views', path.join(__dirname, 'views'))
@@ -17,7 +17,8 @@ server
   .get('/', pages.index)
   .get('/orphanage', pages.orphanage)
   .get('/create-orphanage', pages.createOrphanage)
-  .get('/orphanages', pages.orphanages);
+  .get('/orphanages', pages.orphanages)
+  .post('/save-orphanage', pages.saveOrphanage);
 
 //ligar o server
 server.listen(5500);

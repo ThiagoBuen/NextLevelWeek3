@@ -23,7 +23,7 @@ module.exports = [
     name: 'Lar dos meninos',
     description:
       'Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.',
-    whatsapp: '+35999554422',
+    whatsapp: '+5535999554422',
     images: [
       'https://source.unsplash.com/random?id=1',
       'https://source.unsplash.com/random?id=2',
