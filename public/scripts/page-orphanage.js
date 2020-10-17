@@ -6,8 +6,10 @@ const options = {
   zoomControl: false,
 };
 //create map
+const lat = document.querySelector('[data-lat]').dataset.lat;
+const lng = document.querySelector('[data-lng]').dataset.lng;
 
-const map = L.map('mapid', options).setView([-22.2635347, -45.6965906], 15);
+const map = L.map('mapid', options).setView([lat, lng], 15);
 
 //create and add tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -20,7 +22,7 @@ const icon = L.icon({
   popupAnchor: [170, 2],
 });
 
-L.marker([-22.2635347, -45.6965906], { icon: icon }).addTo(map);
+L.marker([lat, lng], { icon: icon }).addTo(map);
 
 function selectImage(event) {
   const button = event.currentTarget;
