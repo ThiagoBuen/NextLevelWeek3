@@ -37,7 +37,7 @@ Claro, também possua um bom editor/IDE. Durante o desenvolvimento, utilizei o [
 
 
 ### Clone:
-- Clone este repositório na sua máquina local.
+### Clone este repositório na sua máquina local.
 ``` sh
 git clone https://github.com/ThiagoBuen/NextLevelWeek3.git
 ```
@@ -61,8 +61,8 @@ Confira no browser de sua preferência ao acessar http://localhost:5500
 
 ## Tecnologias
 
-- [X] [NodeJS](https://nodejs.org/en/)**
-- [X] [Express](https://expressjs.com/)
-- [X] [SQLite Async](https://www.npmjs.com/package/sqlite-async)
-- [X] [Leaflet](https://leafletjs.com/)
-- [X] [API do WhatsApp](https://olhardigital.com.br/dicas_e_tutoriais/noticia/crie-um-link-para-o-seu-numero-no-whatsapp-e-facilite-o-papo-com-outros-contatos/69246)
+- [NodeJS](https://nodejs.org/en/)**
+- [Express](https://expressjs.com/)
+- [SQLite Async](https://www.npmjs.com/package/sqlite-async)
+- [Leaflet](https://leafletjs.com/)
+- [API do WhatsApp](https://olhardigital.com.br/dicas_e_tutoriais/noticia/crie-um-link-para-o-seu-numero-no-whatsapp-e-facilite-o-papo-com-outros-contatos/69246)
