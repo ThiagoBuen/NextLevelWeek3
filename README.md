@@ -55,7 +55,7 @@ $ npm install
 $ npm start
 ```
 
-### O servidor inciará na porta:5500 - 
+### O servidor inciará na porta:5500
 Confira no browser de sua preferência ao acessar http://localhost:5500
 
 
