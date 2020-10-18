@@ -2,6 +2,8 @@
 
 Repositório dedicado a aplicação Happy, desenvolvida na trilha Discovery da Next Level Week (NLW) 3 da Rocketseat :rocket: :rocket: :rocket: .
 
+### Status: Concluído!
+
 ## Descrição
 
 Happy é uma aplicação web destinada à gerência de orfanatos. 
@@ -71,3 +73,14 @@ Confira no browser de sua preferência ao acessar http://localhost:5500
 - [SQLite Async](https://www.npmjs.com/package/sqlite-async)
 - [Leaflet](https://leafletjs.com/)
 - [API do WhatsApp](https://olhardigital.com.br/dicas_e_tutoriais/noticia/crie-um-link-para-o-seu-numero-no-whatsapp-e-facilite-o-papo-com-outros-contatos/69246)
+
+
+## Agradecimentos
+
+- Rocketseat por disponibilizar um conteúdo foda que me fez ter uma ganho de pelo menos 1 mês em 1 semana;
+
+- [Emanuel Massafera](https://github.com/emanuelmassafera) por ter divulgado, feito o mercham e colaborado no desenvolvimento.
+
+
+# Onward and Upwards! :rocket:
+
