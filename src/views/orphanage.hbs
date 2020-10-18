@@ -102,6 +102,12 @@
             <img src="/images/whatsapp.svg" alt="Chamar no contatinho" />
             Entrar em contato.
           </a>
+
+          <form action="delete-orphanage" id="formDelete" method="post">
+            <input type="hidden" name="id" value={{orphanage.id}}>
+            <button type="submit" class="primary-button delete">Deletar</button>
+          </form>
+
         </div>
       </div>
     </main>

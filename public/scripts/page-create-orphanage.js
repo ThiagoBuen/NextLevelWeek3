@@ -69,11 +69,16 @@ function toggleEvent(event) {
   input.value = button.dataset.value;
 }
 
-function validate(event) {
-  const latMissing = false;
-  if (latMissing) {
-    alert('Selecione um ponto no mapa');
-    event.prevenDefault(); //Não envia o formulário
+const formCreate = document.querySelector('#formCreate');
+
+formCreate.addEventListener('submit', function (event) {
+  const lat = document.querySelector('[name=lat]').value;
+  const lng = document.querySelector('[name=lng]').value;
+
+  console.log('Lat ' + lat + ' Lng ' + lng);
+
+  if (!lat || !lng) {
+    window.alert('Selecione um ponto no mapa');
+    event.preventDefault();
   }
-  //Criar função para validar as informações de lat e lng foram passadas
-}
+});

@@ -49,6 +49,7 @@ main {
 .images button.active {
   opacity: 1;
 }
+
 .images button img {
   width: 100%;
   height: 8.8rem;
@@ -72,7 +73,7 @@ main {
   margin-top: 2.4rem;
 }
 
-.orphanage-details-conten hr {
+.orphanage-details-content hr {
   width: 100%;
   height: 1px;
 

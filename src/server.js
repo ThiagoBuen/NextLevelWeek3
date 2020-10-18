@@ -18,7 +18,8 @@ server
   .get('/orphanage', pages.orphanage)
   .get('/create-orphanage', pages.createOrphanage)
   .get('/orphanages', pages.orphanages)
-  .post('/save-orphanage', pages.saveOrphanage);
+  .post('/save-orphanage', pages.saveOrphanage)
+  .post('/delete-orphanage', pages.deleteOrphanage);
 
 //ligar o server
 server.listen(5500);

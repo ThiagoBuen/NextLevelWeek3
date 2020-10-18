@@ -40,3 +40,13 @@ function selectImage(event) {
 
   button.classList.add('active');
 }
+
+const formDelete = document.querySelector('#formDelete');
+
+formDelete.addEventListener('submit', function (event) {
+  const confirmation = confirm('Deseja deletar?');
+
+  if (!confirmation) {
+    event.preventDefault();
+  }
+});

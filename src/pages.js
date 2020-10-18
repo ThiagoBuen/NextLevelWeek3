@@ -1,5 +1,6 @@
 const Database = require('./database/db');
 const saveOrphanage = require('./database/saveOrphanage');
+const deleteOrphanage = require('./database/deleteOrphanage');
 
 module.exports = {
   index(req, res) {
@@ -15,7 +16,7 @@ module.exports = {
       const results = await db.all(
         `SELECT * FROM orphanages WHERE id = "${id}"`
       );
-      console.log(results[0]);
+      //console.log(results[0]);
       const orphanage = results[0];
 
       orphanage.images = orphanage.images.split(',');
@@ -54,9 +55,9 @@ module.exports = {
     const fields = req.body;
 
     if (Object.values(fields).includes('')) {
-      return res.send('Todos os campos devem ser preenchidos');
+      return window.alert('Preencha todos os campos!');
     }
-    console.log(req.body);
+    //console.log(req.body);
     try {
       const db = await Database;
       await saveOrphanage(db, {
@@ -70,6 +71,22 @@ module.exports = {
         opening_hours: fields.opening_hours,
         open_on_weekends: fields.open_on_weekends,
       });
+
+      return res.redirect('/orphanages');
+    } catch (error) {
+      console.log(error);
+      return res.redirect('/create-orphanage');
+    }
+  },
+
+  async deleteOrphanage(req, res) {
+    const fields = req.body;
+
+    //console.log(req.body);
+
+    try {
+      const db = await Database;
+      await deleteOrphanage(db, fields.id);
 
       return res.redirect('/orphanages');
     } catch (error) {

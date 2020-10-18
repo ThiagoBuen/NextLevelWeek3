@@ -13,6 +13,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #fff;
 }
 
 aside h2 {
