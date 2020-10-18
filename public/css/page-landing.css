@@ -5,7 +5,6 @@
   min-height: 100vh;
 
   display: flex;
-  /* align-items: center;*/ /*Same as margin auto*/
 }
 
 #container {
@@ -27,6 +26,7 @@ main h1 {
 
 .visit p {
   animation-delay: 200ms;
+  margin-top: 64px;
 }
 
 .visit a {
@@ -60,15 +60,12 @@ main h1 {
   animation-delay: 100ms;
 }
 
-/*desktop version */
 @media (min-width: 760px) {
   #container {
-    /*shorthand background:image, sem rept, position size */
     padding: 5rem 2rem;
 
     background: url('../images/bg.svg') no-repeat 80% /
       clamp(30rem, 54vw, 56rem);
-    /*background-position: center;*/
   }
   header {
     display: flex;
@@ -93,10 +90,6 @@ main h1 {
     font-weight: bold;
     line-height: 0.88;
 
-    /*margin-top: clamp(10%, 9vh, 12%);
-    margin-bottom: 4rem;
-    */
-
     margin: clamp(10%, 9vh, 12%) 0 4rem;
     width: min(300px, 80%);
   }
@@ -115,5 +108,6 @@ main h1 {
     font-size: 2.4rem;
     line-height: 1.5;
     width: clamp(20rem, 20vw, 30rem);
+    text-align: left;
   }
 }
