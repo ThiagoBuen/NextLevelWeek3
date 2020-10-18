@@ -8,6 +8,11 @@ Happy é uma aplicação web destinada à gerência de orfanatos.
 
 Neste ambiente, o usuário pode consultar, cadastrar e deletar orfanatos em uma certa localidade de modo a dar mais visibilidade a estas instituições. Ao se integrar todas as informações pertinentes a estes locais, o usuário consegue ter mais comodidade e praticidade para agendar a sua visita. Caso o orfanato disponha de um número com Whatsapp, o usuário pode enviar uma mensagem automática diretamente da API do Whatsapp Web.
 
+## Layout
+
+<h1 align="center">
+  <img alt="" src="./public/images/happy.gif" width="800px"/>
+</h1>
 
 ## Funcionalidades
 
@@ -61,7 +66,7 @@ Confira no browser de sua preferência ao acessar http://localhost:5500
 
 ## Tecnologias
 
-- [NodeJS](https://nodejs.org/en/)**
+- [NodeJS](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [SQLite Async](https://www.npmjs.com/package/sqlite-async)
 - [Leaflet](https://leafletjs.com/)
